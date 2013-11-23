@@ -1,0 +1,87 @@
+@blue: blue;
+@background: rgb(220,220,220);
+@foreground: rgb(220,220,220);
+@text-color: black;
+@fonts: 'League Gothic', 'Proxmia Nova', 'Times New Roman';
+@border-color: rgb(150,150,150);
+
+.default-padding {
+    padding:0% 2% 0% 2%;
+}
+
+.panel-padding {
+    padding: 2% 2% 2% 2%;
+}
+
+.default-border {
+    border-top: 1px solid @border-color;
+    border-bottom: 1px solid @border-color;
+}
+
+.default-input {
+    border: 1px solid #ffa853;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #DDD inset;
+    color: black;
+    width: 15em;
+    size: 30em;
+    margin: 10px 10px 10px 10px;
+    font-size:1.5em;
+}
+
+body {
+    background-color:@background;
+    padding:0% 5% 0% 5%;
+    font-family: @fonts;
+}
+
+main {
+    .default-padding;
+}
+
+article {
+    .default-padding;
+}
+
+header h1 {
+    font-size:2.5em;
+    margin-left:1%;
+    display:inline-block;
+}
+
+header h4 {
+    font-size:.8em;
+    display:inline-block;
+    margin-left:2%;
+    text-align:center;
+}
+
+button {
+    margin-right:1%;
+}
+
+.right-panel {
+    position:absolute; 
+    margin-top:5%;
+    width:24em;
+    margin-left:420px;
+    .default-border;
+    .panel-padding;
+}
+
+.left-panel {
+    margin-top:5%;
+    width:28em;
+    .default-border;
+    .panel-padding;
+}
+
+.contact-form input {
+    .default-input;
+    display:block;
+}
+
+.contact-form textarea {
+    .default-input;
+    width:30em;
+}
