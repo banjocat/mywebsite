@@ -1,4 +1,4 @@
-<?php include '../header.php';?>
+<?php include 'header.php';?>
 <div id='game-instructions' class='right-panel'>
 Loading . . .
 </div>
@@ -23,7 +23,7 @@ function SpaceInvaderStart() {
     var back;
 
     this.setup = function() {
-        back = new jaws.Sprite( {image: "/space_invader/start.png", x:0, y:0 } );
+        back = new jaws.Sprite( {image: "start.png", x:0, y:0 } );
         $('#game-instructions').html( 
             "Move with (d f) or (j k), space to fire. " +
             "It is based off the old game space invaders. " +
@@ -52,7 +52,7 @@ function SpaceInvaderWinner() {
 
     this.setup = function() {
         newGameCountDown = 40;
-        back = new jaws.Sprite( {image: "/space_invader/win.png", x: 0, y: 0} );
+        back = new jaws.Sprite( {image: "win.png", x: 0, y: 0} );
     }
 
     this.update = function() {
@@ -82,7 +82,7 @@ function SpaceInvaderGameOver() {
 
     this.setup = function() {
         newGameCountDown = 40;
-        back = new jaws.Sprite( {image: "/space_invader/end.png", x: 0, y: 0} );
+        back = new jaws.Sprite( {image: "end.png", x: 0, y: 0} );
     }
 
     this.update = function() {
@@ -260,8 +260,8 @@ function SpaceInvaderGame() {
     }
 }
 
-jaws.assets.add("/space_invader/start.png");
-jaws.assets.add("/space_invader/end.png");
-jaws.assets.add("/space_invader/win.png");
+jaws.assets.add("start.png");
+jaws.assets.add("end.png");
+jaws.assets.add("win.png");
 jaws.start(SpaceInvaderStart);
 </script>
