@@ -50,6 +50,7 @@ $(document).ready(function() {
         data = $('#contact-me').serialize();
         $.get('handle-contact.php', data, function(data) {
            console.log(data); 
+           return true;
         });
     });
 });
