@@ -1,5 +1,6 @@
 <?php include 'header.php'?>
 <article class='left-panel'>
+<h2>The Stack</h2>
 A little about the tools I use and why. This is a
 more detailed description based on my 
 <a href='https://docs.google.com/document/d/1k5bL6RYLB1PU6WTuHFsYcvTcKTtE05997NeBoWOHdQo/pub'>resume</a>.

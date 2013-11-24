@@ -19,7 +19,7 @@ Full Stack Engineer
 <button><a href='index.php'>Stack</a></button>
 <button><a href='school.php'>School</a></button>
 <button><a href='space_invader.php'>Box Invader</a></button>
-<button><a href='https://bitbucket.org/Banjocat'>Bitbucket</a></button>
+<button><a href='https://bitbucket.org/Banjocat'>Code</a></button>
 <button><a href='https://docs.google.com/document/d/1k5bL6RYLB1PU6WTuHFsYcvTcKTtE05997NeBoWOHdQo/pub'>Resume</a></button>
 <button><a href='contact.php'>Contact</a></button>
 </nav>
