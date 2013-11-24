@@ -22,6 +22,7 @@ $last_name = $_GET["last-name"];
 $email = $_GET["email"];
 $phone = $_GET["phone-number"];
 $comments = $_GET["comments"];
+<<<<<<< HEAD
 $check_question = $_GET["human-question"];
 $check = $_GET["human-check"];
 $output = sprintf(
@@ -51,4 +52,12 @@ if (human_check($check_question, $check))
 else
     echo($allbad);
 
+=======
+
+$output = sprintf("Name:%s %s\nEmail:%s\nPhone:%s\nComments\n%s",
+    $first_name, $last_name, $email, $phone, $comments);
+mail( "jackmuratore@gmail.com",
+    "From My WebSite",
+    $output);
+>>>>>>> 1e890df61f86c8c6be6aa4d0b91f528ee1123308
 ?>

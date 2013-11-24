@@ -65,7 +65,15 @@ $(document).ready(function() {
             send_invalid_form_msg(empty_field);
             return;
         }
+<<<<<<< HEAD
         $('#contact-me').submit();
+=======
+        data = $('#contact-me').serialize();
+        $.get('handle-contact.php', data, function(data) {
+           console.log(data); 
+           return true;
+        });
+>>>>>>> 1e890df61f86c8c6be6aa4d0b91f528ee1123308
     });
 });
 </script>
