@@ -13,15 +13,15 @@
 <header>
 <h1>Jack Muratore</h1>
 <h4>
-Full Stack Engineer
+Full Stack Developer
 </h4>
 <nav>
-<button><a href='index.php'>Stack</a></button>
-<button><a href='school.php'>School</a></button>
-<button><a href='space_invader.php'>Box Invader</a></button>
-<button><a href='https://bitbucket.org/Banjocat'>Code</a></button>
-<button><a href='https://docs.google.com/document/d/1k5bL6RYLB1PU6WTuHFsYcvTcKTtE05997NeBoWOHdQo/pub'>Resume</a></button>
-<button><a href='contact.php'>Contact</a></button>
+<a href='index.php'><button>Stack</button></a>
+<a href='school.php'><button>School</button></a>
+<a href='space_invader.php'><button>Box Invader</button></a>
+<a href='https://bitbucket.org/Banjocat'><button>Code</button></a>
+<a href='https://docs.google.com/document/d/1k5bL6RYLB1PU6WTuHFsYcvTcKTtE05997NeBoWOHdQo/pub'><button>Resume</button></a>
+<a href='contact.php'><button>Contact</button></a>
 </nav>
 <script>
 $('button').button();
