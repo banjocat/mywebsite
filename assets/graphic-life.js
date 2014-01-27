@@ -15,9 +15,7 @@
         // Private variables
         var stage = new PIXI.Stage(options.background_color);
         var graphics = new PIXI.Graphics();
-        var algorithm_running = false;
         var fps_counter = 0;
-        var stop = true;
         var WIDTH = options.box_size * options.xmax;
         var HEIGHT = options.box_size * options.ymax;
         var renderer = new PIXI.autoDetectRenderer(WIDTH, HEIGHT);
@@ -65,35 +63,49 @@
         };
         
 
-        // Events are used to make run not affect the fps
-        // It still will if it takes too long to run on
-        // very large boards
+        // Events that are called during the animation sequence
         $(renderer.view).on("run_life", function() {
+            // Runs the life algorithm one time
             life.run();
-            algorithm_running = false;
+        });
+    
+        $(renderer.view).on("restart", function() {
+            graphics.clear();
+            initialize();
+        });
+        
+        $(renderer.view).on("draw_life", function() {
+            renderer.render(stage);
+            graphics.clear();
+            fps_counter = 0;
         });
 
+        // requestAnimFrame tries to get 60 fps 
+        // But this will depend on other factors if it achieves this
+        // This makes the goal based on what I have 15 lifes per second
+        // Events are used to attempt to make browsers treat the main loop
+        // and drawing/caculation as two seperate threads... though this depends
+        // on which browser is used. It may do nothing if just one thread is used.
+        // Events at least will prevent any race conditions from happening
         var animate = function()
         {
             fps_counter += 1;
-            if (fps_counter === 2) {
-                algorithm_running = true;
+            // running life is done before drawining
+            // This is to try to give the life algorithim
+            // a little more time before it has to be drawn.
+            // If it takes too long drawing will still have to wait
+            // for the life algorithm to finish
+            if (fps_counter === 1) {
                 $(renderer.view).trigger("run_life");
             }
             else if (fps_counter === 4) {
-                // Just incase its not done yet
-                // Wait till it is finished
-                while (algorithm_running) ;
-                renderer.render(stage);
-                graphics.clear();
-                fps_counter = 0;
+                $(renderer.view).trigger("draw_life");
             } 
             requestAnimFrame(animate);
         }
 
         this.restart = function() {
-            graphics.clear();
-            initialize();
+            $(renderer.view).trigger("restart");
         }
 
         initialize();
@@ -101,6 +113,7 @@
         return this;
     }
 
+    // Jquery plugin creation
     $.fn.Life = function(options) {
         var life = new GraphicLife(this, options);
         return life;

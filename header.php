@@ -22,12 +22,10 @@ Full Stack Developer
 </h4>
 <nav>
 <a href='index.php'><button>Stack</button></a>
-<a href='school.php'><button>School</button></a>
 <a href='space_invader.php'><button>Box Invader</button></a>
 <a href='conway_life.php'><button>Conway's Life</button></a>
 <a href='https://bitbucket.org/Banjocat'><button>Code</button></a>
 <a href='https://docs.google.com/document/d/1k5bL6RYLB1PU6WTuHFsYcvTcKTtE05997NeBoWOHdQo/pub'><button>Resume</button></a>
-<a href='contact.php'><button>Contact</button></a>
 </nav>
 <script>
 $('button').button();

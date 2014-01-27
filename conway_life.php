@@ -4,7 +4,8 @@
 This is a Jquery plugin I wrote that will
 create a random Conway's Life board of a size specificed.
 I have two smaller boards below. To see it pushing its
-extreme at 60x60 go <a href='big_life.php'>here</a>
+extreme at 60x60 but still runable go <a href='big_life.php'>here</a>.
+The graphical engine used is <a href='http://www.pixijs.com'>pixi.js</a>.
 </p>
 
 <h5>A 5 by 5 board</h5>
