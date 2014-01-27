@@ -13,7 +13,7 @@
 <header>
 <h1>Jack Muratore</h1>
 <h4>
-Full Stack Engineer
+Full Stack Developer
 </h4>
 <nav>
 <button><a href='index.php'>Stack</a></button>
