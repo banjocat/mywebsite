@@ -8,8 +8,8 @@ quicker.
 </p>
 <p>
 How large it really can go is dependant on what is running it.
-For example the below can run on an itouch but it will be 
-fairly slow on the first few iterations. 
+An ipad would have a hard time running this 60x60 but can handle
+the previous just fine. A decent desktop will run the below.
 </p>
 <div id='life'>
 </div>
@@ -18,8 +18,8 @@ Restart
 </button>
 <script src='assets/underscore-min.js'></script>
 <script src='assets/pixi.js'></script>
-<script src='assets/life.js'></script>
-<script src='assets/graphic-life.js'></script>
+<script src='assets/life.js?v=1'></script>
+<script src='assets/graphic-life.js?v=1'></script>
 
 <script>
 $(document).ready(function() {

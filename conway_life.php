@@ -23,8 +23,8 @@ Restart
 
 <script src='assets/underscore-min.js'></script>
 <script src='assets/pixi.js'></script>
-<script src='assets/life.js'></script>
-<script src='assets/graphic-life.js'></script>
+<script src='assets/life.js?v=1'></script>
+<script src='assets/graphic-life.js?v=1'></script>
 <script>
 $(document).ready(function()
     {
