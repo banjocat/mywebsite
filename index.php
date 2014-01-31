@@ -19,15 +19,14 @@ In the end it is not about the tools you use
 but the what you create from them. The college
 server running this site only supported CGI or PHP
 for backend. It did give me a good excuse to pick
-up some PHP. In the end I would still pick Django over PHP.
+up some PHP. I would still pick Django over PHP.
 <h5>JQuery/Javascript</h5>
 I use JQuery a lot at work. It makes handling the DOM
 a snap. The only negative about it is that it is an abstraction.
-I have been trying to learn vanilla DOM but its difficult because
-JQuery's API is very clean. I actually like javascript as a language.
-I think it handles closures excellent.
+I have been trying to learn vanilla DOM on the side. 
+I actually like javascript as a language; it handles closures excellent.
 <h5>C/C++</h5>
-I actually program in more C than C++. I use C++ at work
+I program in more C than C++. I use C++ at work
 but because it is on an embedded project and compile times
 is an issue we primiarly use C++ as C with classes.
 I have been learning boost but I believe that when
@@ -38,7 +37,7 @@ difficult to follow.
 <h5>Python</h5>
 Python is my favorite general purpose glue language.
 It is executable psuedo code. The problem with Python
-is that it is a very slow. Which is why I think it works
+is that it is a very slow. Which is why I think Python works
 perfect as an embedded language.
 <h5>Linux</h5>
 I enjoy using Linux. My main computer I use is a
