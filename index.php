@@ -9,7 +9,7 @@ I use the LESS processor for my CSS.
 LESS extends CSS. It enables a programmer to use
 variables and inheritance in their stylesheets. 
 Other CSS frameworks try to replace CSS.
-With LESS the end result still resembles CSS. I believe this 
+With LESS, the end result still resembles CSS. I believe this 
 makes it easier for others to read. LESS is a snap to learn.
 <h5>PHP</h5>
 PHP was used for the backend.
@@ -19,12 +19,13 @@ In the end it is not about the tools you use
 but the what you create from them. The college
 server running this site only supported CGI or PHP
 for backend. It did give me a good excuse to pick
-up some PHP. I would still pick Django over PHP.
+up some PHP. I would still pick Django over it.
 <h5>JQuery/Javascript</h5>
 I use JQuery a lot at work. It makes handling the DOM
 a snap. The only negative about it is that it is an abstraction.
 I have been trying to learn vanilla DOM on the side. 
 I actually like javascript as a language; I love how it handles closures.
+I have messed with Node.js for fun.
 <h5>C/C++</h5>
 I program in more C than C++. I use C++ at work
 but because it is on an embedded project and compile times
