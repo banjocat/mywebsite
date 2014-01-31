@@ -24,11 +24,11 @@ up some PHP. I would still pick Django over PHP.
 I use JQuery a lot at work. It makes handling the DOM
 a snap. The only negative about it is that it is an abstraction.
 I have been trying to learn vanilla DOM on the side. 
-I actually like javascript as a language; it handles closures excellent.
+I actually like javascript as a language; I love how it handles closures.
 <h5>C/C++</h5>
 I program in more C than C++. I use C++ at work
 but because it is on an embedded project and compile times
-is an issue we primiarly use C++ as C with classes.
+are an issue we primiarly use C++ as C with classes.
 I have been learning boost but I believe that when
 the program needs the power of boost I would prefer to
 switch to Python and use C/C++ when speed is needed.
