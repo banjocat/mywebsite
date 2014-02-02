@@ -2,7 +2,7 @@
 <h5>Conway's Life</h5>
 <p>
 This is a Jquery plugin I wrote that will
-create a random Conway's Life board of a size specificed.
+create a random <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Life</a> board of a size specificed.
 I have two smaller boards below. To see it pushing its
 extreme at 60x60 but still runable go <a href='big_life.php'>here</a>.
 The graphical engine used is <a href='http://www.pixijs.com'>pixi.js</a>.
