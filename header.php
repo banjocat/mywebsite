@@ -24,7 +24,7 @@ Full Stack Developer
 <a href='index.php'><button>Stack</button></a>
 <a href='space_invader.php'><button>Box Invader</button></a>
 <a href='conway_life.php'><button>Conway's Life</button></a>
-<a href='https://bitbucket.org/Banjocat'><button>Code</button></a>
+<a href='https://github.org/banjocat'><button>Code</button></a>
 <a href='https://docs.google.com/document/d/1k5bL6RYLB1PU6WTuHFsYcvTcKTtE05997NeBoWOHdQo/pub'><button>Resume</button></a>
 </nav>
 <script>
