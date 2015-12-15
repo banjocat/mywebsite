@@ -21,7 +21,7 @@
 Full Stack Developer
 </h4>
 <nav>
-<a href='index.php'><button>Stack</button></a>
+<a href='index.php'><button>Home</button></a>
 <a href='space_invader.php'><button>Box Invader</button></a>
 <a href='conway_life.php'><button>Conway's Life</button></a>
 <a href='https://github.com/banjocat/'><button>Github</button></a>
