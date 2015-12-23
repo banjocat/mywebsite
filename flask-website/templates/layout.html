@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jack Muratore</title>
+        <script src='//code.jquery.com/jquery-1.9.1.js'></script>
+        <script src='//code.jquery.com/ui/1.10.3/jquery-ui.js'></script>
+        <link rel='stylesheet/less' type='text/css' href='static/style.less'>
+        <script src='static/less-1.5.0.min.js'></script>
+        <script src='static/jaws.js'></script>
+    </head>
+    <body>
+        <header>
+            <h1>Jack Muratore</h1>
+            <h4>
+                Full Stack Developer
+            </h4>
+            <nav>
+                <a href='/'><button>Home</button></a>
+                <a href='boxinvader'><button>Box Invader</button></a>
+                <a href='conway'><button>Conway's Life</button></a>
+                <a href='https://github.com/banjocat/'><button>Github</button></a>
+                <a href='https://docs.google.com/document/d/1k5bL6RYLB1PU6WTuHFsYcvTcKTtE05997NeBoWOHdQo/pub'><button>Resume</button></a>
+            </nav>
+            <script>
+                $('button').button();
+            </script>
+        </header>
+        {% block content %}{% endblock %}
+    </body>
+</html>
