@@ -3,11 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>Jack Muratore</title>
-        <script src='//code.jquery.com/jquery-1.9.1.js'></script>
-        <script src='//code.jquery.com/ui/1.10.3/jquery-ui.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <link rel='stylesheet/less' type='text/css' href='static/style.less'>
-        <script src='static/less-1.5.0.min.js'></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
         <script src='static/jaws.js'></script>
+            <script>
+                $(function() {
+                    $('button').button();
+                });
+            </script>
     </head>
     <body>
         <header>
@@ -22,9 +28,6 @@
                 <a href='https://github.com/banjocat/'><button>Github</button></a>
                 <a href='https://docs.google.com/document/d/1k5bL6RYLB1PU6WTuHFsYcvTcKTtE05997NeBoWOHdQo/pub'><button>Resume</button></a>
             </nav>
-            <script>
-                $('button').button();
-            </script>
         </header>
         {% block content %}{% endblock %}
     </body>
