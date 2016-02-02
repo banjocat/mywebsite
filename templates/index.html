@@ -9,9 +9,11 @@
 
 <pre style='background:black;color: #909000;font-size:110%'><code>#include &lt;vector&gt;
 #include &lt;string&gt;
+#include &lt;tuple&gt;
 
 using std::vector;
 using std::string;
+using std::make_tuple;
 
 auto backend = vector&lt;string&gt;{
 &nbsp;&nbsp;&nbsp;&nbsp;"C++", "python", "C",
@@ -30,6 +32,8 @@ auto devops = vector&lt;string&gt;{
 &nbsp;&nbsp;&nbsp;&nbsp;"Linux", "Docker", "AWK",
 &nbsp;&nbsp;&nbsp;&nbsp;"Jenkins", "Ansible"
 };
+
+auto fullstack = make_tuple(backend, frontend, devops);
 </code></pre>
 
 
