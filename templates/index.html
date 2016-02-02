@@ -1,35 +1,43 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<article class='left-panel'>
-<p>Hello. My name is Jack. I am a full stack web engineer at Commscope.</p>
-<h2>My Stack</h2>
-<h4>C++</h4>
- This is where I have
-the most professional exprerience. I have coded in modern C++14 style and C
-with classes. The latter is popular in the embedded world. 
-I prefer the modern approach if given the option.
-<h4>JavaScript</h4>
-For frontend I like JQuery. The 
-advantage it gives over browser incompatability
-is too good to pass up. I frequently have to support older IE versions.
-I am really excitied about webcomponents.
-I have professional experience using react.js and backbone. I also have done some work
-using nodejs for fast prototyping.
-<h4>Python</h4>
-This website was created using Flask. Python is my preferred backend langauge.
-The amount of libraries avaiable to a Python engineer is amazing. 
-When speed is needed you can always use C++ or Cython.
-<h4>SQL</h4>
-I can write any query needed but ORMs are superior for most actions. If you try to change your database
-and you are using straight SQL it becomes a nightmare quick. Of course some SELECT statements
-are considerably easier when you can just write the SQL.
-<h4>Linux</h4>
-While at heart I am a developer I also have done some devops work.
-I have knowledge of jenkins, apache, ansible and docker.
-<h4>Others</h4>
-I try to be language agnostic but choices have to be made.
-I toy with other languages as well such as Go, Lisp, and Ruby. 
-I am a fan of NoSQL but I haven't worked on a serious project that used it yet.
-</article>
+<div class="row">
+    <div class="col-xs-offset-7">
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="font-style: italic">#include &lt;vector&gt;</span>
+<span style="font-style: italic">#include &lt;string&gt;</span>
+
+<span style="font-weight: bold">using</span> std::vector;
+<span style="font-weight: bold">using</span> std::string;
+
+<span style="font-weight: bold">auto</span> frontend = vector&lt;string&gt;{
+    <span style="font-style: italic">&quot;JavaScript&quot;</span>, <span style="font-style: italic">&quot;backbone&quot;</span>,
+    <span style="font-style: italic">&quot;HTML&quot;</span>, <span style="font-style: italic">&quot;CSS&quot;</span>, <span style="font-style: italic">&quot;LESS&quot;</span>,
+    <span style="font-style: italic">&quot;react.js&quot;</span>, <span style="font-style: italic">&quot;bootstrap&quot;</span>
+};
+
+<span style="font-weight: bold">auto</span> backend = vector&lt;string&gt;{
+    <span style="font-style: italic">&quot;C++&quot;</span>, <span style="font-style: italic">&quot;Python&quot;</span>, <span style="font-style: italic">&quot;C&quot;</span>,
+    <span style="font-style: italic">&quot;lisp&quot;</span>, <span style="font-style: italic">&quot;ruby&quot;</span>, <span style="font-style: italic">&quot;php&quot;</span>,
+    <span style="font-style: italic">&quot;SQL&quot;</span>, <span style="font-style: italic">&quot;Go&quot;</span>
+};
+
+<span style="font-weight: bold">auto</span> devops = vector&lt;string&gt;{
+    <span style="font-style: italic">&quot;Linux&quot;</span>, <span style="font-style: italic">&quot;Docker&quot;</span>, <span style="font-style: italic">&quot;AWK&quot;</span>,
+    <span style="font-style: italic">&quot;Jenkins&quot;</span>, <span style="font-style: italic">&quot;Ansible&quot;</span>
+};
+</pre></div>
+
+
+
+
+
+
+    </div>
+</div>
+<div class="row">
+    <div class='col-xs-4 col-xs-offset-4'>
+        <div class="h1">Jack Muratore <span style='display:block; margin-left:4%' class="small">Full stack developer</span></div>
+    </div>
+</div>
 {% endblock %}

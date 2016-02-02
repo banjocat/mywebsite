@@ -1,21 +1,21 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h5>60x60 Conway's Life</h5>
-<p>
+<h3>60x60 Conway's Life</h3>
+<p class='h4'>
 This is where it starts to slow down.
 Eventually as the cell number goes down it speeds back up.
 It only checks cells that are alive so less cells means
 quicker.
 </p>
-<p>
+<p class='h4'>
 How large it really can go is dependant on what is running it.
 An ipad would have a hard time running this 60x60 but can handle
 the previous just fine. A decent desktop will run the below.
 </p>
 <div id='life'>
 </div>
-<button id='restart'>
+<button class='btn btn-primary' id='restart'>
 Restart
 </button>
 <script src='static/underscore-min.js'></script>

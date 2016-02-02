@@ -1,0 +1,17 @@
+
+body {
+    background-color:#333;
+    color: #FFF;
+}
+
+
+.btn.btn-primary {
+    background-color: #FFF;
+    color: #000
+}
+
+.nav.nav-pills a {
+    text-decoration: underline;
+}
+
+
