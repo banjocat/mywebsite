@@ -1,9 +1,10 @@
 var gulp = require('gulp');
 var rename = require('gulp-rename');
+var less = require('gulp-less');
 
 var files = {
-    css: [
-        './node_modules/**/bootstrap.min.css',
+    less: [
+        './static/less/style.less',
     ],
     js: [
         './node_modules/jquery/dist/jquery.min.js',
@@ -23,6 +24,13 @@ gulp.task('js', function() {
     .src(files.js)
     .pipe(rename({dirname: ''}))
     .pipe(gulp.dest('./static/js/'));
+});
+
+
+gulp.task('less', function() {
+    return gulp.src(files.less)
+    .pipe(less())
+    .pipe(gulp.dest('./static/css/.'));
 });
 
 
