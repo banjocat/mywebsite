@@ -29,21 +29,20 @@ using std::make_tuple;
 
 auto backend = vector&lt;string&gt;{
 &nbsp;&nbsp;&nbsp;&nbsp;"C++", "python", "C",
-&nbsp;&nbsp;&nbsp;&nbsp;"lisp", "flask", 
-&nbsp;&nbsp;&nbsp;&nbsp;"SQL", "SDN", "pyretic"
+&nbsp;&nbsp;&nbsp;&nbsp;"flask", "SQL"
 };
 
 auto frontend = vector&lt;string&gt;{
-&nbsp;&nbsp;&nbsp;&nbsp;"JavaScript", "backbone",
-&nbsp;&nbsp;&nbsp;&nbsp;"HTML", "CSS", "LESS",
+&nbsp;&nbsp;&nbsp;&nbsp;"JavaScript", "HTML",
+&nbsp;&nbsp;&nbsp;&nbsp;"CSS", "LESS",
 &nbsp;&nbsp;&nbsp;&nbsp;"react.js", "bootstrap",
 &nbsp;&nbsp;&nbsp;&nbsp;"jQuery"
 };
 
 auto devops = vector&lt;string&gt;{
-&nbsp;&nbsp;&nbsp;&nbsp;"Linux", "Docker", "AWK",
+&nbsp;&nbsp;&nbsp;&nbsp;"Linux", "Docker", "npm"
 &nbsp;&nbsp;&nbsp;&nbsp;"Jenkins", "Ansible", "gulp",
-&nbsp;&nbsp;&nbsp;&nbsp;"npm"
+&nbsp;&nbsp;&nbsp;&nbsp;"SDN", "pyretic"
 };
 
 auto fullstack = make_tuple(backend, frontend, devops);
