@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var rename = require('gulp-rename');
 var less = require('gulp-less');
+var minifycss = require('gulp-minify-css');
 
 var files = {
     less: [
@@ -13,12 +14,6 @@ var files = {
     ]
 };
 
-gulp.task('css', function() {
-    return gulp.src(files.css)
-    .pipe(rename({dirname: ''}))
-    .pipe(gulp.dest('./static/css/.'))
-});
-
 gulp.task('js', function() {
     return gulp
     .src(files.js)
@@ -30,6 +25,7 @@ gulp.task('js', function() {
 gulp.task('less', function() {
     return gulp.src(files.less)
     .pipe(less())
+    .pipe(minifycss())
     .pipe(gulp.dest('./static/css/.'));
 });
 
