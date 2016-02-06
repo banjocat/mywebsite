@@ -1,13 +1,25 @@
 {% extends "layout.html" %}
-
 {% block content %}
-<div class="row">
-    <div class='col-md-3 col-md-offset-4' style='margin-top:15%'>
-        <div class="h1">Jack Muratore <span style='display:block; margin-left:4%' class="small">Full stack developer</span></div>
-    </div>
-    <div class="col-md-4">
 
-<pre style='background:black;color: #909000;font-size:110%'><code>#include &lt;vector&gt;
+<div class='row'>
+    <div class='col-md-4 col-md-offset-3'>
+        <div class='row top-margin-middle'>
+            <div class="col-md-offset-3 col-md-12 h1">
+                Jack Muratore
+        <div class='row'>
+            <div class='small col-md-11 small-indent'>
+                    Full stack developer
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class='col-md-4'>
+        <div class='row'>
+            <div class='col-md-12'>
+            <pre class='code-window'><code>#include &lt;vector&gt;
 #include &lt;string&gt;
 #include &lt;tuple&gt;
 
@@ -30,15 +42,16 @@ auto frontend = vector&lt;string&gt;{
 
 auto devops = vector&lt;string&gt;{
 &nbsp;&nbsp;&nbsp;&nbsp;"Linux", "Docker", "AWK",
-&nbsp;&nbsp;&nbsp;&nbsp;"Jenkins", "Ansible"
+&nbsp;&nbsp;&nbsp;&nbsp;"Jenkins", "Ansible", "gulp",
+&nbsp;&nbsp;&nbsp;&nbsp;"npm"
 };
 
 auto fullstack = make_tuple(backend, frontend, devops);
-</code></pre>
+            </code></pre>
 
+        </div>
+    </div>
+</div>
+</div>
 
-</div>
-</div>
-<div class="row">
-</div>
 {% endblock %}
