@@ -270,10 +270,12 @@ function Life(_options)
         new_values_with_ones = [];
         new_board = [];
         new_board.length = options.xmax * options.ymax;
+        /*
         console.log(
                 'Life ran in', 
                 new Date() - start_time,
                 'ms');
+                */
     }
 
     return this;
