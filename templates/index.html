@@ -29,7 +29,8 @@ using std::make_tuple;
 
 auto backend = vector&lt;string&gt;{
 &nbsp;&nbsp;&nbsp;&nbsp;"C++", "python", "C",
-&nbsp;&nbsp;&nbsp;&nbsp;"flask", "SQL"
+&nbsp;&nbsp;&nbsp;&nbsp;"flask", "SQL", "Django"
+&nbsp;&nbsp;&nbsp;&nbsp;"SQLalchemy"
 };
 
 auto frontend = vector&lt;string&gt;{
@@ -41,8 +42,7 @@ auto frontend = vector&lt;string&gt;{
 
 auto devops = vector&lt;string&gt;{
 &nbsp;&nbsp;&nbsp;&nbsp;"Linux", "Docker", "npm"
-&nbsp;&nbsp;&nbsp;&nbsp;"Jenkins", "Ansible", "gulp",
-&nbsp;&nbsp;&nbsp;&nbsp;"SDN", "pyretic"
+&nbsp;&nbsp;&nbsp;&nbsp;"Jenkins", "Apache", "gulp",
 };
 
 auto fullstack = make_tuple(backend, frontend, devops);
