@@ -16,8 +16,6 @@ def run():
     '''
     Runs the single jackmuratore image
     '''
-    execute(build)
-    execute(remove)
     local('docker run -p 0.0.0.0:8000:8000 --name jackmuratore -d jackmuratore')
 
 
@@ -25,8 +23,6 @@ def attach():
     '''
     Runs the signle image without daemon
     '''
-    execute(build)
-    execute(remove)
     local('docker run -p 0.0.0.0:8000:8000 --name jackmuratore jackmuratore')
 
 
@@ -36,3 +32,16 @@ def remove():
     '''
     local('docker stop jackmuratore')
     local('docker rm jackmuratore')
+
+def restart():
+    '''
+    Restarst the image
+    '''
+    local('docker restart jackmuratore')
+
+
+def clean():
+    '''
+    Cleans unused images
+    '''
+    local("docker rmi $(docker images | awk '/none/ {print $3}')")

@@ -1,5 +1,6 @@
 from python:2-alpine
 
+EXPOSE 8000
 
 RUN mkdir -p /opt/
 COPY web /opt/app
