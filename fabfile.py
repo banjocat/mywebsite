@@ -9,7 +9,6 @@ def build():
 
 
 def push():
-    local('docker build -t banjocat/jackmuratore:latest .')
     local('docker push banjocat/jackmuratore:latest')
 
 def run():
@@ -40,8 +39,9 @@ def restart():
     local('docker restart jackmuratore')
 
 
-def clean():
-    '''
-    Cleans unused images
-    '''
-    local("docker rmi $(docker images | awk '/none/ {print $3}')")
+def deploy():
+    local((
+        "ansible-playbook -i "
+        "./ansible/digital_ocean_hosts "
+        "--user=root "
+        "./ansible/playbook.yml"))
