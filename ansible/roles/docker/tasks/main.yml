@@ -24,26 +24,11 @@
 - name: Install docker
   apt: name=docker-engine
 
+- name: Install docker-py
+  pip: name=docker-py
+
 - name: Start docker
   service: name=docker state=started
 
 
-- name: Install requirements for login
-  pip: name={{item}}
-  with_items:
-      - docker-py
-
-
-- name: Pull image
-  docker_image:
-      name: banjocat/jackmuratore
-
-- name: Start container
-  docker_container:
-      name: jackmuratore
-      image: banjocat/jackmuratore
-      exposed_ports:
-          - 8000
-      ports:
-          - "8100:8000"
 

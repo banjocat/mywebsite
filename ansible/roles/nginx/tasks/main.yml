@@ -1,0 +1,20 @@
+---
+
+- name: Setup Nginx volume
+  copy:
+      src: nginx.conf
+      dest: /etc/nginx.conf
+
+- name: Start Nginx container
+  docker_container:
+      name: nginx
+      image: nginx:1.10.1-alpine
+      recreate: yes
+      volumes:
+          - "/etc/nginx.conf:/etc/nginx/nginx.conf:ro"
+      exposed_ports:
+          - 80
+      ports:
+          - "80:80"
+      links:
+          - jackmuratore

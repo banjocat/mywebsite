@@ -1,0 +1,13 @@
+---
+
+- name: Pull image
+  docker_image:
+      name: banjocat/jackmuratore
+
+- name: Start container
+  docker_container:
+      name: jackmuratore
+      image: banjocat/jackmuratore
+      recreate: yes
+      exposed_ports:
+          - 8000
