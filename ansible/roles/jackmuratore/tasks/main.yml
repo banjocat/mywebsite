@@ -3,6 +3,7 @@
 - name: Pull image
   docker_image:
       name: banjocat/jackmuratore
+      force: yes
 
 - name: Start container
   docker_container:
