@@ -8,7 +8,7 @@
                 Jack Muratore
         <div class='row'>
             <div class='small col-md-11 small-indent'>
-                    Full stack developer
+                    Software Systems Engineer
             </div>
         </div>
             </div>
@@ -28,24 +28,26 @@ using std::string;
 using std::make_tuple;
 
 auto backend = vector&lt;string&gt;{
-&nbsp;&nbsp;&nbsp;&nbsp;"C++", "python", "C",
-&nbsp;&nbsp;&nbsp;&nbsp;"flask", "SQL", "Django"
-&nbsp;&nbsp;&nbsp;&nbsp;"SQLalchemy"
+&nbsp;&nbsp;&nbsp;&nbsp;"C++", "python", "pypy"
+&nbsp;&nbsp;&nbsp;&nbsp;"flask", "postgres", "Django"
+&nbsp;&nbsp;&nbsp;&nbsp;"SQLite3", "tornado"
 };
 
-auto frontend = vector&lt;string&gt;{
-&nbsp;&nbsp;&nbsp;&nbsp;"JavaScript", "HTML",
-&nbsp;&nbsp;&nbsp;&nbsp;"CSS", "LESS",
-&nbsp;&nbsp;&nbsp;&nbsp;"react.js", "bootstrap",
-&nbsp;&nbsp;&nbsp;&nbsp;"jQuery"
+
+auto systems = vector&lt;string&gt;{
+&nbsp;&nbsp;&nbsp;&nbsp; "C", "Linux", "TCP/IP socket programming",
+&nbsp;&nbsp;&nbsp;&nbsp; "Network troubleshooting"
 };
+
 
 auto devops = vector&lt;string&gt;{
-&nbsp;&nbsp;&nbsp;&nbsp;"Linux", "Docker", "npm"
-&nbsp;&nbsp;&nbsp;&nbsp;"Jenkins", "Apache", "gulp",
+&nbsp;&nbsp;&nbsp;&nbsp;"Vagrant", "Docker", "Mesos",
+&nbsp;&nbsp;&nbsp;&nbsp;"Ansible", "Puppet", "Nginx",
+&nbsp;&nbsp;&nbsp;&nbsp;"Jenkins", "Apache", "Openstack"
+&nbsp;&nbsp;&nbsp;&nbsp;"Digitalocean"
 };
 
-auto fullstack = make_tuple(backend, frontend, devops);
+auto software_systems_engineer = make_tuple(backend, systems, devops);
             </code></pre>
 
         </div>
