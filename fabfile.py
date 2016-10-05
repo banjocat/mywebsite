@@ -5,7 +5,7 @@ def build():
     '''
     Builds latest docker image
     '''
-    local('docker build --force-rm --tag jackmuratore:latest .')
+    local('docker build --force-rm --tag banjocat/jackmuratore:latest .')
 
 
 def push():

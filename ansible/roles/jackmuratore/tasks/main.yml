@@ -3,12 +3,13 @@
 - name: Pull image
   docker_image:
       name: banjocat/jackmuratore
-      force: yes
+      force: true
 
 - name: Start container
   docker_container:
       name: jackmuratore
       image: banjocat/jackmuratore
       recreate: yes
+      restart: yes
       exposed_ports:
           - 8000
