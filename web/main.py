@@ -3,7 +3,6 @@ from flask import render_template
 app = Flask(__name__)
 
 
-
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -13,9 +12,11 @@ def home():
 def conway():
     return render_template('conway.html')
 
+
 @app.route('/biglife')
 def bigconway():
     return render_template('biglife.html')
+
 
 @app.route('/boxinvader')
 def boxinvader():
@@ -24,5 +25,4 @@ def boxinvader():
 if __name__ == '__main__':
     app.debug = True
     app.run()
-
 
