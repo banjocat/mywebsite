@@ -1,9 +1,0 @@
----
-
-- hosts: web
-  gather_facts: false
-  become: yes
-  roles:
-      - docker
-      - jackmuratore
-      - nginx

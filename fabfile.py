@@ -1,47 +1,14 @@
-from fabric.api import local, execute
+from fabric.api import run, put, env, hosts, cd
+
+env.user = 'root'
+env.port = 2222
 
 
-def build():
-    '''
-    Builds latest docker image
-    '''
-    local('docker build --force-rm --tag banjocat/jackmuratore:latest .')
-
-
-def push():
-    local('docker push banjocat/jackmuratore:latest')
-
-def run():
-    '''
-    Runs the single jackmuratore image
-    '''
-    local('docker run -p 0.0.0.0:8000:8000 --name jackmuratore -d jackmuratore')
-
-
-def attach():
-    '''
-    Runs the signle image without daemon
-    '''
-    local('docker run -p 0.0.0.0:8000:8000 --name jackmuratore jackmuratore')
-
-
-def remove():
-    '''
-    Removes running image
-    '''
-    local('docker stop jackmuratore')
-    local('docker rm jackmuratore')
-
-def restart():
-    '''
-    Restarst the image
-    '''
-    local('docker restart jackmuratore')
-
-
+@hosts('jackmuratore.com')
 def deploy():
-    local((
-        "ansible-playbook -i "
-        "./ansible/digital_ocean_hosts "
-        "--user=root "
-        "./ansible/playbook.yml"))
+    run('mkdir -p /app/jack/')
+    put('./production-compose.yml', '/app/jack/docker-compose.yml')
+    with cd('/app/jack'):
+        run('docker-compose down')
+        run('docker-compose pull')
+        run('docker-compose up -d')
