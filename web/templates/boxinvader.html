@@ -1,6 +1,10 @@
 {% extends "layout.html" %}
 
 {% block content %}
+    <p>
+No matter where you are in the stack, you have to know a least
+some JavaScript.
+</p>
 <div id='game-instructions' class='right-panel'>
 Loading . . .
 </div>
@@ -28,11 +32,10 @@ function SpaceInvaderStart() {
     this.setup = function() {
         back = new jaws.Sprite( {image: "start.png", x:0, y:0 } );
         $('#game-instructions').html( 
-            "Move with arrow keys and fire with space. " +
             "It is based off the old game space invaders. " +
             "It was written in javascript using the " +
             "<a href='http://www.jawsjs.com'>jaws.js</a> game engine. " +
-            "It is a easy to use engine and I recommend it for quick games.");
+            "Move with arrow keys and fire with space. ");
     }
 
     this.update = function() {
