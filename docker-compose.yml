@@ -7,3 +7,11 @@ services:
             - "./web:/opt/app"
         ports:
             - "8000:8000"
+    wagtail:
+        build: ./wagtail/.
+        command: /bin/sh -c "./manage.py migrate && ./manage.py runserver 0.0.0.0:8000"
+        volumes:
+            - "./wagtail/mysite:/app"
+        ports:
+            - "8001:8000"
+
