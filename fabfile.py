@@ -11,6 +11,5 @@ def deploy():
     run('mkdir -p /app/jack/')
     put('./production-compose.yml', '/app/jack/docker-compose.yml')
     with cd('/app/jack'):
-        run('docker-compose down')
         run('docker-compose pull')
         run('docker-compose up -d')
