@@ -7,13 +7,32 @@
             <div class="col-md-offset-3 col-md-12 h1">
                 Jack Muratore
         <div class='row'>
-            <div class='small col-md-11 small-indent'>
+            <div class='small col-md-11 small-indent job-title'>
                     Site Reliability Engineer
             </div>
         </div>
             </div>
         </div>
     </div>
+    <script>
+    var jobtitles = [
+    'Site Reliability Engineer',
+    'Backend Engineer',
+    'Software Engineer',
+    'Internal Tooling Developer',
+    'DevOps Engineer',
+    'Linux System Admin',
+    'Software Developer',
+    'Software Systems Designer',
+    'Performance Engineer',
+    ]
+    function changeTitle() {
+        var title = jobtitles[Math.floor(Math.random()* jobtitles.length)];
+        $('.job-title').text(title)
+    }
+    changeTitle();
+    window.setInterval( changeTitle, 5000);
+    </script>
 
 
     <div class='col-md-4'>
