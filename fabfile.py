@@ -1,4 +1,4 @@
-from fabric.api import run, put, env, hosts, cd, local
+from fabric.api import run, put, env, hosts, cd
 
 env.user = 'root'
 env.port = 2222
@@ -6,8 +6,6 @@ env.port = 2222
 
 @hosts('jackmuratore.com')
 def deploy():
-    local('docker-compose build')
-    local('docker-compose push')
     run('mkdir -p /app/jack/')
     put('./production-compose.yml', '/app/jack/docker-compose.yml')
     with cd('/app/jack'):
