@@ -1,0 +1,20 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: jackmuratore-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: jackmuratore
+    spec:
+      containers:
+      - name: jackmuratore
+        image: banjocat/jackmuratore
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8000
+          initialDelaySeconds: 10
+          periodSeconds: 5
