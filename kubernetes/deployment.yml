@@ -12,6 +12,13 @@ spec:
       containers:
       - name: jackmuratore
         image: banjocat/jackmuratore
+        resources:
+          limits:
+            cpu: ".1"
+            memory: 200Mi
+          requests:
+            cpu: ".1"
+            memory: 100Mi
         livenessProbe:
           httpGet:
             path: /
