@@ -11,7 +11,7 @@ pipeline:
       - docker_password
   deploy:
     image: quay.io/honestbee/drone-kubernetes
-    deployment: jackmuratore-depoyment
+    deployment: jackmuratore-deployment
     repo: banjocat/jackmuratore
     container: jackmuratore
     tag:                 
