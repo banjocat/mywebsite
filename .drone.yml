@@ -10,9 +10,6 @@ pipeline:
   deploy:
     test:
     image: quay.io/honestbee/drone-kubernetes
-    kubernetes_server: ${KUBE_IP}
-    kubernetes_cert: ${KUBE_CERT}
-    kubernetes_token: ${KUBE_TOKEN}
     deployment: jackmuratore
     repo: banjocat/jackmuratore
     container: jackmuratore
