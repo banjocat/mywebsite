@@ -8,7 +8,6 @@ pipeline:
       - docker_username
       - docker_password
   deploy:
-    test:
     image: quay.io/honestbee/drone-kubernetes
     deployment: jackmuratore
     repo: banjocat/jackmuratore
