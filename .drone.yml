@@ -1,8 +1,7 @@
 pipeline:
-  build:
-    image: alpine
-    commands:
-      - docker build -t banjocat/jackmuratore:latest .
-      - docker login -u banjocat -p ${DOCKER_PASS}
-      - docker push banjocat/jackmuratore:latest
+  publish:
+    image: plugins/docker
+    email: jackmuratore@gmail.com
+    repo: banjocat/jackmuratore
+    tags: latest
 
