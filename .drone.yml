@@ -19,5 +19,9 @@ pipeline:
     when:
         branch:
           - master
+    secrets:
+      - KUBERNETES_CERT
+      - KUBERNETES_SERVER
+      - KUBERNETES_TOKEN
 
 
