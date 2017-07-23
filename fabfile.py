@@ -1,13 +1,29 @@
-from fabric.api import run, put, env, hosts, cd
+import base64
+import yaml
 
-env.user = 'root'
-env.port = 2222
+from fabric.api import local
+
+def get_tokens():
+    account_yml = local('kubectl get serviceaccounts drone -o yaml', capture=True)
+    account = yaml.load(account_yml)
+    secret_name = account['secrets'][0]['name']
+    secret_yml = local('kubectl get secrets %s -o yaml' % secret_name, capture=True)
+    secret = yaml.load(secret_yml)
+    cert = secret['data']['ca.crt']
+    token_64 = secret['data']['token']
+    print '***********token64*************'
+    print token_64
+    token = base64.standard_b64decode(token_64)
+    print '***********cert************'
+    print cert
+    print '***********token***********'
+    print token
 
 
-@hosts('jackmuratore.com')
-def deploy():
-    run('mkdir -p /app/jack/')
-    put('./production-compose.yml', '/app/jack/docker-compose.yml')
-    with cd('/app/jack'):
-        run('docker-compose pull')
-        run('docker-compose up -d')
+    
+
+
+
+
+
+
