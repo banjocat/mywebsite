@@ -4,4 +4,8 @@ pipeline:
     email: jackmuratore@gmail.com
     repo: banjocat/jackmuratore
     tags: latest
+    secrets:
+      - docker_username
+      - docker_password
+
 
