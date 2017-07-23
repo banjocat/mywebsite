@@ -13,11 +13,8 @@ spec:
       - name: jackmuratore
         image: banjocat/jackmuratore
         resources:
-          limits:
-            cpu: ".1"
-            memory: 200Mi
           requests:
-            cpu: ".1"
+            cpu: ".01"
             memory: 100Mi
         livenessProbe:
           httpGet:
